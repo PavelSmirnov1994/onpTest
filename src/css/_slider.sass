@@ -1,0 +1,103 @@
+* 
+    box-sizing: border-box
+*:active, *:hover, *:focus
+    outline: 0
+body
+    background-color: #121859
+    +LatoMedium
+.wrapper
+    max-width: 1024px
+    position: relative
+    width: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: center
+.slider
+    width: 100%
+.slider__item
+    position: relative 
+.slider img 
+    height: 768px
+    width: 100%
+    object-fit: cover
+.slick-vertical .slick-slide 
+    border: none
+.slick-dotted.slick-slider
+    margin: 0
+.slick-dots
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    height: 100px
+    top: 40%
+    
+.slick-dots li
+    margin: 10px 35px
+    width: 5px
+    height: 5px
+    
+.slick-dots li button
+    background-color: #ffffff
+    border-radius: 50%
+    opacity: 0.7
+    transition: background .3s   
+.slick-dots li button:before
+    content: ''
+
+.slick-dots li.slick-active button
+    background-color: #f78b1f
+    transition: background .3s
+    opacity: 0.7
+
+
+
+
+.wrapper_inner
+    position: absolute
+    bottom: 0%
+    z-index: 1005
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 20%
+    
+.pointer-down 
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow: hidden
+    width: 100%
+.pointer-down p
+    position: absolute
+    bottom: 24%
+    z-index: 1010
+    +GothamProMedium
+    font-size: 17px
+    color: #ffffff
+.pointer-down__arrow
+    position: absolute
+    bottom: 11%
+    width: 5%
+    height: 15%
+    z-index: 1010
+.pointer-down__background
+    position: absolute
+    bottom:  -5%
+    width: 80%
+    height: 80%
+.hideTarget
+    display: none
+
+
+
+    
+    
+
+
+
+
+    
+
+
+    
