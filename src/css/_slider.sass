@@ -59,7 +59,7 @@ body
     display: flex
     justify-content: center
     width: 100%
-    height: 20%
+    height: 13%
     
 .pointer-down 
     position: relative
@@ -70,7 +70,7 @@ body
     width: 100%
 .pointer-down p
     position: absolute
-    bottom: 24%
+    bottom: 26%
     z-index: 1010
     +GothamProMedium
     font-size: 17px
@@ -78,22 +78,33 @@ body
 .pointer-down__arrow
     position: absolute
     bottom: 11%
-    width: 5%
-    height: 15%
     z-index: 1010
+img.pointer-down__arrow
+    width: 40px
+    height: auto
 .pointer-down__background
     position: absolute
-    bottom:  -5%
+    bottom:  -10%
+    
+img.pointer-down__background 
     width: 80%
-    height: 80%
+    height: auto
 .hideTarget
     display: none
 
 
-
+.slick-prev
+    display: none
+.slick-prev:before
+    content: ''
+.slick-next
     
     
-
+.slick-next:before
+     content: ''
+    
+.slick-disabled
+    display: none
 
 
 
